@@ -1,0 +1,96 @@
+*
+{
+	box-sizing: border-box;
+}
+
+body
+{
+	margin: 0px 0px;
+	font-family: 'Raleway', sans-serif;
+    background-image: url(images/matrix_anim.gif);
+    background-repeat: repeat;    
+    background-attachment: fixed;
+}
+
+.alto
+{
+	height: 100px;
+}
+
+.alto_titulo
+{
+	height: 40px;
+}
+
+.contenedor
+{
+	width: 100%;
+	margin: 0 auto;
+}
+
+#li_activo
+{
+	background-color: #0080ff;	
+}
+
+.enlaces_de_la_cabecera
+{
+	text-decoration: none;
+	color: white;
+	padding: 32px 32px;
+	display: block;			
+}
+
+.enlaces_de_la_cabecera:hover
+{
+	background-color: #0080ff;
+	color: white;
+	text-decoration: none;	
+}
+
+#menu_de_la_cabecera
+{
+	text-decoration: none;
+	list-style: none;
+	display: flex;
+	padding: 0;
+	margin: 0;
+	justify-content: space-around;	
+}
+
+nav
+{	
+	font-size: 14px;
+	padding: 0px 0px;
+	background-color: #0000ff;	
+}
+
+.blanco
+{
+	color: white;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1000px)
+{
+	#menu_de_la_cabecera
+	{
+		display: block;		
+	}
+}
+
+.center
+{
+	text-align: center;
+}
+
+.enlace
+{
+	text-decoration: none;
+	color: black;
+}
+
+.enlace:hover
+{
+	text-decoration: none;
+	color: black;
+}
