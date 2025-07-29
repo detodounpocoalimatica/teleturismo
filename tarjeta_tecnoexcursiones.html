@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8"> 
+	<title>Document</title>
+	<link rel="stylesheet" href="boostrup/css/bootstrap.min.css">	
+	<link rel="stylesheet" type="text/css" href="estilo.css">	
+  <script> alert("Para realizar una compra debe agregar una tarejta de débito o crédito");</script>
+	
+</head>
+<body>
+  <div class="contenedor">      
+    <nav>
+      <ul id="menu_de_la_cabecera">   
+        <li><a class="enlaces_de_la_cabecera" href="index.html" >INICIO</a></li>
+        <li><a id="li_activo" class="enlaces_de_la_cabecera" href="tecnoexcursiones.html" >TECNOEXCURSIONES</a></li>
+        <li><a class="enlaces_de_la_cabecera" href="login.php" >LOGIN</a></li>
+        <li><a class="enlaces_de_la_cabecera" href="registro.html" >REGISTRO</a></li>
+        <li><a class="enlaces_de_la_cabecera" href="contacto.php" >CONTACTO</a></li>     
+      </ul>
+    </nav>
+  </div>  
+
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-10 offset-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3 mt-5">
+
+        <div class="card">
+          <div class="card-body">
+            <form action="tarjeta_tecnoexcursiones.php" method="post" id="tarjeta">
+              <div class="form-group">
+                <label for="numero_de_tarjeta"><b>Número de tarjeta</b></label>
+                <input type="number" class="form-control" id="numero_de_tarjeta" placeholder="Número de tarjeta" name="numero_de_tarjeta">            
+              </div>
+
+              <div class="form-group">
+                <label for="anyo_de_caducidad"><b>Año de caducidad</b></label>
+                <input type="number" class="form-control" id="anyo_de_caducidad" placeholder="Año de caducidad" name="anyo_de_caducidad">
+              </div>
+
+              <div class="form-group">
+                <label for="mes_de_caducidad"><b>Mes de caducidad</b></label>
+                <input type="number" class="form-control" id="mes_de_caducidad" placeholder="Mes de caducidad" name="mes_de_caducidad">
+              </div>
+
+              <div class="form-group">
+                <label for="numero_secreto"><b>Número secreto</b></label>
+                <input type="number" class="form-control" id="numero_secreto" placeholder="Número secreto" name="numero_secreto">
+              </div>
+
+              <div class="form-group">
+                <label for="titular_de_la_tarjeta"><b>Titular de la tarjeta</b></label>
+                <input type="text" class="form-control" id="titular_de_la_tarjeta" placeholder="Titular de la tarjeta" name="titular_de_la_tarjeta">
+              </div>
+
+              <div class="form-group form-check"> </div>
+              <br><br>
+
+              <button type="submit" class="btn btn-primary btn-block">Guardar datos de la tarjeta</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>  
+
+  <script src="jquery-3.3.1.js"></script>
+  <script src="mi_javascript_tarjeta.js"></script>
+  <script src="js.cookie.js"></script>
+  <script src="cookies.js"></script>
+  <script src="boostrup/popper.min.js"></script>
+  <script src="boostrup/js/bootstrap.min.js"></script>  
+
+</body>
+</html>

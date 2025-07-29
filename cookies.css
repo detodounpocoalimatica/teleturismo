@@ -1,0 +1,21 @@
+#parrafo_fijo
+{
+	width: 100%;
+	padding: 40px;	
+	background-color: rgba(0, 0, 0, 0.6);
+	position: fixed;
+	color: white;
+	text-align: center;
+}
+
+#enlace_cookies
+{
+	text-decoration: none;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+#boton_aceptar
+{
+	background-color: #0000ff;	
+}
